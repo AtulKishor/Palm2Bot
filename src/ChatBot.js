@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-// import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
-// import Fab from "@mui/material/Fab"
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
+import Fab from "@mui/material/Fab"
 
 const Bot = () => {
   const [text, setText] = useState('')
@@ -49,13 +49,14 @@ const Bot = () => {
       </div>
       <textarea value={text} onChange={e => setText(e.target.value)}></textarea>
       <button onClick={getResponse}>⇒</button>
-      
-      {/* <Fab onClick={getResponse}>
-            <RemoveRedEyeIcon />
-          </Fab> */}
     </div>
   ):
-  <button onClick={handleClick}>Bot</button>
+  <div>
+  <span> Chat with AI Bot : </span>
+  <Fab onClick={handleClick}>
+    <RemoveRedEyeIcon />
+  </Fab>
+  </div>
 }
 
 export default Bot

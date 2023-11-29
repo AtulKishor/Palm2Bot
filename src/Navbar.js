@@ -5,6 +5,8 @@ const Navbar = () => {
   return (
     <nav>
       <img src='images/logo.jpeg' alt='logo'/>
+      <img src='images/profile.png' alt='owner'/>
+      <h1>शंकर ऑप्टिकल वर्क्स</h1>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -19,7 +21,6 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-        <img src='images/profile.png' alt='owner profile'/>
     </nav>
   );
 };
